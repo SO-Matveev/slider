@@ -6,8 +6,8 @@ function init() {
     let currentIndex = 0;
 
     function showSlide(index){
-        for (let i=0; i < slides.length; i++){
-            slides[i].style.display = 'none';
+        for (let slide of slides){
+            slide.style.display = 'none';
         }
         slides[index].style.display = 'block';
         pagination.textContent = `${index + 1}/${slides.length}`;
